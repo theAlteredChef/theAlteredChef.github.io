@@ -1,0 +1,203 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="Recipe Workflow" content="width=device-width, initial-scale=1">
+  <title>Recipe Workflow Site</title>
+
+  <style>
+<style>
+	body, html {
+	  height: 100%;
+	  margin: 0;
+	}
+
+	body {
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+
+	background: url("https://drive.google.com/uc?export=view&id=1yuuKRLLg2OwtD2bamvf3hWE5_Vx6f3Lt") no-repeat center center fixed;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+	.main {
+	  margin: 5%;
+	}	
+	
+	.topnav {
+	  padding: 1% 1.25%;
+	  background-color: #676767;
+	  color: #f1f1f1;
+	  position: relative;
+	  text-align: center;
+	}
+
+	.topnav a {
+	  color: #f2f2f2;
+	  text-align: justify;
+	  text-justify: inter-word;
+	  padding: 1% 2%;
+	  text-decoration: none;
+	  font-size: 14pt;
+	}
+
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: #D3235E;
+	}
+
+	.topnav a.active {
+	  background-color: #4CAF50;
+	  color: #D3235E;
+	}
+
+	summary {
+	  color: #808080;
+	  text-align: center;
+	  width: 25%;
+	  margin: auto;
+	  padding: 1% 4%;
+	  text-decoration: none;
+	  font-size: 15pt;
+	}	
+
+	summary:hover {
+	  background-color: rgba(221,221,221, 0.5);
+	  color: #D3235E;
+	}
+	
+	.content {
+	  padding: 1%;
+	}
+
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	}
+
+	.sticky + .content {
+	  padding-top: 4%;
+	}
+
+	.bottomnav {
+	  padding: 1% 1.25%;
+	  background-color: #404040;
+	  color: #f1f1f1;
+	  position: fixed;
+	  text-align: center;
+	  left: 0;
+	  bottom: 0;
+	  width: 100%;
+	  
+	}
+   
+	.bottomnav a {
+	  color: #f2f2f2;
+	  text-align: justify;
+	  text-justify: inter-word;
+	  padding: 1% 2%;
+	  text-decoration: none;
+	  font-size: 14pt;
+	}
+
+	.bottomnav a:hover {
+	  background-color: #ddd;
+	  color: #D3235E;
+	}
+
+	.bottomnav a.active {
+	  background-color: #4CAF50;
+	  color: #D3235E;
+	}
+
+	
+	
+</style>
+  </style>
+</head>
+
+<body>
+
+<div id="header" class="topnav">
+	<a href="https://drive.google.com/drive/my-drive">Home</a>
+	<a href="https://mail.google.com/mail/u/?authuser=EmailTheAlteredChef@gmail.com">E-Mail</a>
+	<a href="https://formfaca.de/sm/p1xrdb6Xu">New Recipe Form</a>
+	<a href="https://docs.google.com/spreadsheets/d/18VHtHtW8Re2m71LI28aKC2vSZLo-GQQufxpQW1tJJtg/edit?#gid=1201359299&fvid=406557428">Recipe Log</a>
+	<a href="https://calendar.google.com/calendar/u/0?cid=ZW1haWx0aGVhbHRlcmVkY2hlZkBnbWFpbC5jb20">Calendar</a>
+</div>
+
+<div id="main" class="main">
+	<article>
+		<details>
+		<summary>
+			Add New Recipe (+)
+        </summary>
+			<iframe  src="https://formfaca.de/sm/p1xrdb6Xu" 
+			width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading Form…
+			</iframe>
+		</details>
+	</article>
+
+	<article>
+		<details>
+		<summary>
+			View All Recipe Ideas (+)
+        </summary>
+			<iframe  src="https://docs.google.com/spreadsheets/d/18VHtHtW8Re2m71LI28aKC2vSZLo-GQQufxpQW1tJJtg/edit?rm=minimal#gid=1201359299&fvid=406557428" 
+			width="100%" height=400; frameborder="0" marginheight="0" marginwidth="0">Loading Recipes…
+			</iframe>
+		</details>
+	</article>
+	
+	<article>
+		<details>
+		<summary>
+			Calendar (+)
+        </summary>
+			<iframe  src="https://calendar.google.com/calendar/embed?src=emailthealteredchef%40gmail.com&ctz=America%2FChicago" 
+			width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading Recipes…
+			</iframe>
+		</details>
+	</article>	
+</div>
+
+<div id="footer" class="bottomnav">
+	<a href="https://drive.google.com/drive/my-drive">Home</a>
+	<a href="https://mail.google.com/mail/u/?authuser=EmailTheAlteredChef@gmail.com">E-Mail</a>
+	<a href="https://formfaca.de/sm/p1xrdb6Xu">New Recipe Form</a>
+	<a href="https://docs.google.com/spreadsheets/d/18VHtHtW8Re2m71LI28aKC2vSZLo-GQQufxpQW1tJJtg/edit?#gid=1201359299&fvid=406557428">Recipe Log</a>
+	<a href="https://calendar.google.com/calendar/u/0?cid=ZW1haWx0aGVhbHRlcmVkY2hlZkBnbWFpbC5jb20">Calendar</a>
+</div>
+
+<script>
+
+
+window.onscroll = function() {
+  headerScroll();
+};
+  
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function headerScroll() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+
+</script>
+</body>
+</html>
+
+
+<!-- url("https://drive.google.com/uc?export=view&id=1RiAU6ThD_S57S8RRsStUBOE_f4xNSAAq") no-repeat center center fixed; -->
