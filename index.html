@@ -9,13 +9,13 @@
   <style>
 <style>
 	body, html {
+	  width: 100vw;
 	  height: 100vh;
 	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
 	}
 
 	body {
-	  margin: 0;
-	  font-family: Arial, Helvetica, sans-serif;
 
 	background: url("https://drive.google.com/uc?export=view&id=1yuuKRLLg2OwtD2bamvf3hWE5_Vx6f3Lt") no-repeat center center fixed;
 
@@ -26,13 +26,12 @@
 	}
 
 	.main {
-	  margin: 5vh;
+	  margin: 5vw;
 	}	
 	
-
 	.topnav {
 
-	  padding: 1vw 1.25vh;
+	  padding: 1.25vh 1vw;
 	  background-color: #676767;
 	  color: #f1f1f1;
 	  position: relative;
@@ -45,7 +44,7 @@
 	  margin: auto;
 	  color: #f2f2f2;
 	  text-align: center;
-	  padding: 1vw 2vw;
+	  padding: 2vh 1vw;
 	  text-decoration: none;
 	  font-size: 2vh;
 	  white-space: nowrap;
@@ -63,17 +62,38 @@
 	}
 
 
+	.container {
+	  margin: auto;
+      width: 50%;
+	  position: relative;
+	  width: 100vw;
+	  height: 60vh;
+	  overflow: hidden;
+	  padding: 0 2vw;
+	}
+
+	.responsive-iframe {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  width: 100vw;
+	  height: 100vh;
+	  border: none;
+	  padding: 2vh 1vw;
+	}
+	
 	summary {
 	  color: #808080;
 	  text-align: center;
 	  width: 100vw;
-	  margin:0 auto;
-	  padding: 2vw 3vh;
+	  margin: auto;
+	  padding: 2vh 3vh;
 	  text-decoration: none;
-	  font-size: 3vh;
+	  font-size: 2vh;
 	}	
-	
-	
+
 	summary:hover {
 	  background-color: rgba(221,221,221, 0.5);
 	  color: #D3235E;
@@ -94,7 +114,7 @@
 	}
 
 	.bottomnav {
-	  padding: 0vw 1.25vh;
+	  padding: 1.25vh 1vw;
 	  background-color: #676767;
 	  color: #f1f1f1;
 	  position: fixed;
@@ -110,7 +130,7 @@
 	  margin: auto;
 	  color: #f2f2f2;
 	  text-align: center;
-	  padding: 1vw 2vw;
+	  padding: 2vh 1vw;
 	  text-decoration: none;
 	  font-size: 2vh;
 	  white-space: nowrap;
@@ -148,9 +168,12 @@
 		<summary>
 			Add New Recipe (+)
         </summary>
-			<iframe  src="https://formfaca.de/sm/p1xrdb6Xu" 
-			width="100vw" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading Form…
+		<div class="container"> 
+			<iframe class="responsive-iframe"		
+			src="https://formfaca.de/sm/p1xrdb6Xu" 
+			>Loading Form…
 			</iframe>
+		</div>
 		</details>
 	</article>
 
@@ -159,9 +182,11 @@
 		<summary>
 			View All Recipe Ideas (+)
         </summary>
-			<iframe  src="https://docs.google.com/spreadsheets/d/18VHtHtW8Re2m71LI28aKC2vSZLo-GQQufxpQW1tJJtg/edit?rm=minimal#gid=1201359299&fvid=406557428" 
-			width="100vw" height=400; frameborder="0" marginheight="0" marginwidth="0">Loading Recipes…
+		<div class="container"> 
+			<iframe class="responsive-iframe" src="https://docs.google.com/spreadsheets/d/18VHtHtW8Re2m71LI28aKC2vSZLo-GQQufxpQW1tJJtg/edit?rm=minimal#gid=1201359299&fvid=406557428" 
+			>Loading Recipes…
 			</iframe>
+		</div>
 		</details>
 	</article>
 	
@@ -170,9 +195,11 @@
 		<summary>
 			Calendar (+)
         </summary>
-			<iframe  src="https://calendar.google.com/calendar/embed?src=emailthealteredchef%40gmail.com&ctz=America%2FChicago" 
-			width="100vw" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading Recipes…
+		<div class="container"> 
+			<iframe class="responsive-iframe"	src="https://calendar.google.com/calendar/embed?src=emailthealteredchef%40gmail.com&ctz=America%2FChicago" 
+			>Loading Recipes…
 			</iframe>
+		</div>
 		</details>
 	</article>	
 </div>
