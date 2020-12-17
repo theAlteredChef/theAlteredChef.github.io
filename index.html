@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="Recipe Workflow" content="width=device-width, height=device-height,  initial-scale=1">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
   <title>Recipe Workflow Site</title>
 
   <style>
@@ -11,7 +12,7 @@
 	body, html {
 	  width: 100vw;
 	  height: 100vh;
-	  margin: 0.5vw;
+	  margin: 0;
 	  font-family: Arial, Helvetica, sans-serif;
 	}
 
@@ -30,39 +31,48 @@
 	  padding: 10vh 1vw;
 	}	
 	
+	.appIcon {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  max-width:15vw;
+	  max-height:15vh;
+	  width: auto;
+	  height: auto;
+	}
 	.container {
 	  display:block;
 	  margin: 0 auto;
 	  width: 95vw;
-	  height: 40vh;
-	  overflow: hidden;
-	  padding: 2vh 0vw;
+	  height: 60vh;
+	  padding: 1vh 0vw;
 	}
 
 	.responsive-iframe {
 	  display:block;
 	  margin: 0 auto;
 	  width: 100vw;
-	  height: 40vh;
 	  border: none;
-	  padding: 2vh 0vw;
+	  padding: 1vh 0vw;
+	  overflow:auto;
+	  height: 60vh;
 	}
 	
-	summary {
+	summary, appDiv {
 	  color: #808080;
 	  text-align: center;
 	  text-decoration: none;
-	  font-size: 5vw;
+	  font-size: 3vw;
 	  position: relative;
 	  left: 0;
 	  right: 0;
 	  width: 95vw;
 	  border: none;
-	  padding: 5vh 0vw ;	  
+	  padding: 2vh 0vw 2vh 0vw;	  
 	  
 	}	
 
-	summary:hover, summary:active {
+	summary:hover, summary:active, appDiv:hover, appDiv:active {
 	  background-color: rgba(221,221,221, 0.5);
 	  color: #D3235E;
 	}
@@ -132,7 +142,7 @@
 			Add New Recipe (+)
         </summary>
 		<div class="container"> 
-			<iframe class="responsive-iframe"		
+			<iframe class="responsive-iframe"  scrolling="yes" style="overflow:visible"		
 			src="https://formfaca.de/sm/p1xrdb6Xu" 
 			>Loading Form…
 			</iframe>
@@ -146,7 +156,7 @@
 			View All Recipe Ideas (+)
         </summary>
 		<div class="container"> 
-			<iframe class="responsive-iframe" src="https://docs.google.com/spreadsheets/d/18VHtHtW8Re2m71LI28aKC2vSZLo-GQQufxpQW1tJJtg/edit?rm=minimal#gid=1201359299&fvid=406557428" 
+			<iframe class="responsive-iframe" class="responsive-iframe"  scrolling="yes" style="overflow:visible" src="https://docs.google.com/spreadsheets/d/18VHtHtW8Re2m71LI28aKC2vSZLo-GQQufxpQW1tJJtg/edit?rm=minimal#gid=1201359299&fvid=406557428" 
 			>Loading Recipes…
 			</iframe>
 		</div>
@@ -154,17 +164,17 @@
 	</article>
 	
 	<article>
-		<details>
-		<summary>
-			Calendar (+)
-        </summary>
 		<div class="container"> 
-			<iframe class="responsive-iframe"	src="https://calendar.google.com/calendar/embed?src=emailthealteredchef%40gmail.com&ctz=America%2FChicago" 
-			>Loading Recipes…
-			</iframe>
+			<a href="https://www.paprikaapp.com/">
+			<img class= "appIcon" alt="Open Paprika Recipe Manager" 
+			src = "https://play-lh.googleusercontent.com/XaFExOs9MMdCKM51P3JEt4E_vKUSWTzanixQCwUFutoIyPNlKmxi1I2NlT9R4AHURJg=s180-rw"/>
+			</a>
 		</div>
-		</details>
-	</article>	
+	</article>
+	
+
+	
+	
 </div>
 
 <div id="footer" class="bottomnav">
@@ -175,8 +185,9 @@
 	<a href="https://calendar.google.com/calendar/u/0?cid=ZW1haWx0aGVhbHRlcmVkY2hlZkBnbWFpbC5jb20">Calendar</a>
 </div>
 
-<script>
-
-</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>
+
+
+<!-- url("https://drive.google.com/uc?export=view&id=1RiAU6ThD_S57S8RRsStUBOE_f4xNSAAq") no-repeat center center fixed; -->
